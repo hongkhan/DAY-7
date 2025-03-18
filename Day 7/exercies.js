@@ -21,7 +21,7 @@ console.log(`${amountInUSD} USD = ${amountInVND} VND`);
 let totalSeconds = 1000; //tong so giay mun chuyen
 let hour = 3600;
 let minute = 60;
-let hours = (totalSeconds / hour);
-let minutes = ((totalSeconds % hour) / minute);
+let hours = Math.floor(totalSeconds / hour);
+let minutes = Math.floor((totalSeconds % hour) / minute);
 let seconds = totalSeconds % minute;
-console.log(hours + "h", minutes + "m", seconds + "s");
+console.log(hours + ":"+ minutes + ":"+ seconds );
